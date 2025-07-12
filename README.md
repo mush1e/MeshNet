@@ -58,30 +58,6 @@ meshnet topology                # Visualize network structure
 - [ ] Network bridging capabilities
 - [ ] Quality of service controls
 
-## Development Roadmap
-
-**Phase 1 (Weeks 1-2): Foundation**
-- Basic TCP server/client communication
-- Simple peer discovery via UDP multicast
-- Binary message protocol design
-
-**Phase 2 (Weeks 3-4): Multi-Peer Network**
-- Connection management for multiple peers
-- Message broadcasting with loop prevention
-- Basic network topology tracking
-
-**Phase 3 (Weeks 5-7): Smart Routing**
-- AODV routing protocol implementation
-- Dynamic route discovery and maintenance
-- Path optimization algorithms
-
-**Phase 4 (Weeks 8-9): Security**
-- End-to-end encryption implementation
-- Key exchange protocols
-- Node authentication system
-
-[View Full Roadmap](docs/roadmap.md)
-
 ## Architecture (Planned)
 
 ```
