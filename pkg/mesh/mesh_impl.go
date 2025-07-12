@@ -1,3 +1,5 @@
+// Package mesh provides the main mesh implementation that coordinates
+// transport, routing, and application layers for emergency communications
 package mesh
 
 import (
