@@ -38,7 +38,7 @@ type NodeID string
 type Peer struct {
 	ID       NodeID    `json:"id"`
 	Name     string    `json:"name"`
-	Addr     string    `json:"address"`
+	Addr     string    `json:"addr"`
 	Port     int       `json:"port"`
 	LastSeen time.Time `json:"last_seen"`
 }
@@ -51,7 +51,7 @@ type Message struct {
 	To       NodeID    `json:"to"`       // Destination node (empty for broadcast)
 	Data     []byte    `json:"data"`     // Application payload
 	Priority Priority  `json:"priority"` // Message priority
-	TTL      int       `json:"ttl"`      // Time to live (hops remaining)
+	TTL      int       `json:"ttl"`      // Time to live (hops remaining) -> TO PREVENT INF LOOPS
 	Created  time.Time `json:"created"`  // When message was created
 }
 
